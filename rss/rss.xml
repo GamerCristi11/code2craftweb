@@ -1,0 +1,22 @@
+<rss version="2.0">
+    <channel>
+        <title>Code2Craft</title>
+        <description>Projects and posts from code2craft.nekoweb.org</description>
+        <link>https://code2craft.nekoweb.org</link>
+        <item>
+            <title>300 views special</title>
+            <description>Code2Craft website hit 300 views, soo a new badge was created for that!</description>
+            <link>https://code2craft.nekoweb.org/posts/300-special.html</link>
+            <guid>300-special</guid>
+            <pubDate>Wed 09 April 2025, 22:24:00 +0300</pubDate>
+        </item>
+        <item>
+            <title>New layout-A new look</title>
+            <description>Code2Craft website has got a new and fresh look!</description>
+            <link>https://code2craft.nekoweb.org/posts/new-look.html</link>
+            <guid>new-look</guid>
+            <pubDate>Tue 08 April 2025, 19:29:00 +0300</pubDate>
+        </item>
+    </channel>
+</rss>
+         

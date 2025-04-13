@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/cat-logo.png" type="image/x-icon">
+    <title>Code2Craft-socials</title>
+    <link href="/css/style1.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+	<script>
+		    document.addEventListener('DOMContentLoaded', () => {
+		        fetch('/html-assets/nav.html')
+		            .then(response => response.text())
+		            .then(data => {
+		                document.getElementById('navbar-placeholder').innerHTML = data;
+		            })
+		            .catch(error => console.error('Error loading navbar:', error));
+		    });
+	</script>
+    <div id="container">
+    <div id="headerArea">
+        <div id="header"></div>
+ 		<div id="navbar-placeholder"></div>
+    </div>
+
+    <div id="flex">
+        
+        <main>
+            <h1>Welcome to my socials page!</h1>
+            <p><strong>Here are my curent socials online:</strong></p>
+            <p><a href="https:youtube.com/@Code2Craft">My YouTube(@Code2Craft)</a></p>
+            <p><a href="https://github.com/GamerCristi11">My GitHub(@GamerCristi11)</a></p>
+            <p><a href="https:youtube.com/@Code2Craft">My Scratch(@GamerCristi11)</a></p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </main>
+        
+    </div>
+    <footer id="footer">&copy; 2025-? "Until the unknown"-@Code2Craft(Owner)</footer>
+</div>
+</body>
+</html>
+
