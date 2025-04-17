@@ -1,55 +1,28 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/cat-logo.png" type="image/x-icon">
-    <title>Code2Craft</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-	<script>
-		    document.addEventListener('DOMContentLoaded', () => {
-		        fetch('/html-assets/nav.html')
-		            .then(response => response.text())
-		            .then(data => {
-		                document.getElementById('navbar-placeholder').innerHTML = data;
-		            })
-		            .catch(error => console.error('Error loading navbar:', error));
-		    });
-	</script>
-    <div id="container">
-        <div id="headerArea">
-            <div id="header"></div>
- 		<div id="navbar-placeholder"></div>
-        </div>
-
-        <div id="flex">
-            
-            <main>
-                <h2>Welcome to my website!</h2>
-                <p><strong>About me:</strong></p>
-                <p>Hello and welcome! I'm @Code2Craft, and this is where I share my passion for technology, creativity, and innovation. From Raspberry Pi 4, ESP32, and Arduino Uno projects to Roblox animations and Scratch creations, you'll find a variety of my work here. I also post these projects and animations on YouTube—don't forget to check them out! Fun fact: my old username, which I sometimes still use, is @GamerCristi11. Thank you for visiting, and I hope you enjoy exploring my world of ideas and creations!</p>
-            </main>
-            
-        <aside id="rightSidebar"><h2>Updates</h2>
-        <div class="box">
-            <p>New look-Tue 08 April 2025</p>
-            <ul style="padding-left:10px;">
-                <li>The website got a new and fresh look!</li>
-				<li>See the post <a href="posts/new-look.html">here</a>!</li>
-            </ul>
-        </div>
-        <div>
-            <a href="https://code2craft.atabook.org" class="guestbook-button">Sign my guestbook</a>
-        </div>
-</aside></div>
-		<div id="grid-window">
-		  <div class="grid-item">My hobbies: Coding, animating and sometimes posting on YouTube. See my channel <a href="https://youtube.com/@Code2Craft">here</a> or on <a href="/socials.html">my socials tab</a>.</div>
-		  <div class="grid-item">Why is this website a bit basic? Because I am still learning CSS and HTML.</div>
-		</div>
-        <footer id="footer" style="margin-top: 0px;">&copy; 2025-? "Until the unknown"-@Code2Craft(Owner)</footer>
-    </div>
-  </body>
+    <title>Code2Craft - About</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js" defer></script>
+    <link rel="icon" href="/assets/cat-logo.png" type="image/png">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <header>
+        <h1>Home</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Hello there!</h2>
+            <p>My hobbies: Coding, animating and sometimes posting on YouTube. See my channel <a href="https://youtube.com/@Code2Craft">here</a> or on <a href="/socials.html">my socials tab</a>.</p>
+            <h4>History of hosting the website:</h4>
+            <p>First, the website started on nekoweb.org .It was a great hosting service that was free but I bought an domain so I needed a new host, that's why I choose github and that's still the curent hosting platform that I use!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Code2Craft</p>
+    </footer>
+</body>
 </html>

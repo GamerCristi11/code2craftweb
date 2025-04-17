@@ -3,45 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/cat-logo.png" type="image/x-icon">
-    <title>Code2Craft-posts</title>
-    <link href="/css/style1.css" rel="stylesheet" type="text/css" media="all">
+    <title>Code2Craft - Posts</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js" defer></script>
+    <link rel="icon" href="/assets/cat-logo.png" type="image/png">
 </head>
 <body>
-	<script>
-		    document.addEventListener('DOMContentLoaded', () => {
-		        fetch('/html-assets/nav.html')
-		            .then(response => response.text())
-		            .then(data => {
-		                document.getElementById('navbar-placeholder').innerHTML = data;
-		            })
-		            .catch(error => console.error('Error loading navbar:', error));
-		    });
-	</script>
-    <div id="container">
-    <div id="headerArea">
-        <div id="header"></div>
- 		<div id="navbar-placeholder"></div>
-    </div>
-
-    <div id="flex">
-        
-        <main>
-            <h1>Welcome to the posts page!</h1>
-            <p><strong>Here are the curent posts:</strong></p>
-            <p><a href="/posts/new-look.html">A new look-Tue 08 April 2025</a></p>
-            <p><a href="/posts/300-special.html">300 views special!</a></p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </main>
-        
-    </div>
-    <footer id="footer">&copy; 2025-? "Until the unknown"-@Code2Craft(Owner)</footer>
-</div>
+    <div id="nav-container"></div>
+    <header>
+        <h1>Posts</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Our Latest Posts</h2>
+            <ul>
+                <li><a href="/posts/post1.html">Post 1</a></li>
+                <li><a href="/posts/post2.html">Post 2</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Code2Craft</p>
+    </footer>
 </body>
 </html>
-

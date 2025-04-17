@@ -3,44 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/cat-logo.png" type="image/x-icon">
-    <title>Code2Craft-A new look</title>
-    <link href="/css/style1.css" rel="stylesheet" type="text/css" media="all">
+    <title>Code2Craft - About</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js" defer></script>
+    <link rel="icon" href="/assets/cat-logo.png" type="image/png">
 </head>
 <body>
-	<script>
-		    document.addEventListener('DOMContentLoaded', () => {
-		        fetch('/html-assets/nav.html')
-		            .then(response => response.text())
-		            .then(data => {
-		                document.getElementById('navbar-placeholder').innerHTML = data;
-		            })
-		            .catch(error => console.error('Error loading navbar:', error));
-		    });
-	</script>
-    <div id="container">
-    <div id="headerArea">
-        <div id="header"></div>
- 		<div id="navbar-placeholder"></div>
-    </div>
-
-    <div id="flex">
-        
-        <main>
-            <h1>A new look!</h1>
-            <h3>Sooo, code2craft.xyz got a new and cooler look!</h3>
-            <p>Before the update, the website was basic but now using <a href="https://goblin-heart.net/sadgrl/projects/layout-builder/">this</a> layout builder. Another new update is that the old "projects" page transformed into "posts" and to see the old tutorials are now visible just on <a href="https://github.com/GamerCristi11">my GitHub</a>!</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </main>
-        
-    </div>
-    <footer id="footer">&copy; 2025-? "Until the unknown"-@Code2Craft(Owner)</footer>
-</div>
+    <div id="nav-container"></div>
+    <header>
+        <h1>New look!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>The new look!</h2>
+            <p>Before, code2craft.xyz looked like space but now the website got another upgrade!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Code2Craft</p>
+    </footer>
 </body>
 </html>
-
