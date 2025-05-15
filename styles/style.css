@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #00ff00;
+}
+
+p {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: gray;
+}
+
+#vending-gif {
+    width: 100px;
+    margin-right: auto;
+}
