@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Code2Craft - Posts</title>
+        <link>https://code2craft.xyz</link>
+        <description>Latest posts made on my website</description>
+        <language>en-us</language>
+
+        <item>
+            <title>Learning 2 Code!</title>
+            <link>https://code2craft.xyz/posts/15-05-25-learning2code.html</link>
+            <description><![CDATA[
+                <h4>This website is like a journey of me learning HTML and CSS!</h4>
+                <p>I first hosted my website on NekoWeb but I since decided to move to Github Pages!</p>
+                <p>I am working now for a gif button for my website so I hope I will finish it fast!</p>
+                <p>You can sign my GuestBook! Currently no support email...</p>
+            ]]></description>
+            <pubDate>Thu, 15 May 2025</pubDate>
+        </item>
+
+    </channel>
+</rss>
