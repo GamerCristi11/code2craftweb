@@ -18,5 +18,39 @@
             <pubDate>Thu, 15 May 2025</pubDate>
         </item>
 
+        <item>
+            <title>Learning 2 Code!</title>
+            <link>https://code2craft.xyz/posts/15-05-25-learning2code.html</link>
+            <description><![CDATA[        <h1>A simple guide on how to make a website</h1>
+        <p>Here is a list of things you can use to build your own online world: </p>
+        <iframe src="/assets/HowToMakeAWebsiteList.pdf" width="800" height="600"></iframe>
+        <br>
+        <a href="/assets/HowToMakeAWebsiteList.pdf" download>
+            <button id="download-button">Download PDF</button>
+        </a>
+        <br>
+        <p>This is the rss feed template:</p>
+        <textarea readonly id="code-ex">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+      <channel>
+         <title>Title</title>
+        <link>https://code2craft.xyz/example.html</link>
+        <description>Example</description>
+        <language>en-us</language>
+
+        <item>
+            <title>Post 1</title>
+            <link>https://code2craft.xyz/example.html</link>
+            <description>Example</description>
+            <pubDate>Date</pubDate>
+        </item>
+
+    </channel>
+</rss>
+        </textarea>]]></description>
+            <pubDate>Thu, 15 May 2025</pubDate>
+        </item>
+
     </channel>
 </rss>

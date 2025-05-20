@@ -48,3 +48,15 @@ a:hover{
     width: 100px;
     margin-right: auto;
 }
+
+#code-ex {
+    width: 800px;
+    height: 250px;
+}
+
+#download-button {
+    background-color: cornflowerblue;
+    color: white;
+    height: auto;
+    width: 100px;
+}
