@@ -22,7 +22,6 @@
         <item>
             <title>How to make a website!</title>
             <link>https://code2craft.xyz/posts/20-05-25-webtutorial.html</link>
-<<<<<<< HEAD
             <description><![CDATA[        
                     <h1>A simple guide on how to make a website</h1>
                     <caption>Date: 20 May 2025 | Updated: None</caption>
@@ -57,25 +56,6 @@
 
             <pubDate>Thu, 20 May 2025</pubDate>
         </item>
-=======
-            <description><![CDATA[        <h1>A simple guide on how to make a website</h1>
-        <p>Here is a list of things you can use to build your own online world: </p>
-        <iframe src="/assets/HowToMakeAWebsiteList.pdf" width="800" height="600"></iframe>
-        <br>
-        <a href="/assets/HowToMakeAWebsiteList.pdf" download>
-            <button id="download-button">Download PDF</button>
-        </a>
-        <br>
-        <p>This is the rss feed template:</p>
-        <textarea readonly id="code-ex">
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-      <channel>
-         <title>Title</title>
-        <link>https://code2craft.xyz/example.html</link>
-        <description>Example</description>
-        <language>en-us</language>
->>>>>>> 12436900afbfdf96aef6c9f034f5882996dcec17
 
         <item>
             <title>Sry for no updates recently...</title>
@@ -92,15 +72,5 @@
             ]]></description>
             <pubDate>Fri, 06 June 2025</pubDate>
         </item>
-<<<<<<< HEAD
-=======
-
-    </channel>
-</rss>
-        </textarea>]]></description>
-            <pubDate>Thu, 20 May 2025</pubDate>
-        </item>
-
->>>>>>> 12436900afbfdf96aef6c9f034f5882996dcec17
     </channel>
 </rss>
