@@ -71,3 +71,8 @@ a:hover{
     width: 150;
     height: auto;
 }
+
+#oldwin {
+    height: auto;
+    width: 100 px;
+}
