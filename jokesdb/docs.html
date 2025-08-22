@@ -10,6 +10,15 @@
         html {
             scroll-behavior: smooth;
         }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: black;
+        }
         </style>
     </head>
     <body>
@@ -30,35 +39,64 @@
         <br>
         <p>To see related post about JokesDB, <a href="/posts/jokesdb.html">click here</a></p>
         <br>
-        <h3>Sections:</h3>
+        <h2>Chapters</h2>
         <ul>
-            <li><a href="#install">How to install JokesDB</a></li>
-            <li><a href="#example">Example of use</a></li>
-            <li><a href="#sourcecode">Source code</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a>
+            <ul>
+                <li><a href="#1-get-jokes-randomly">1. Get jokes randomly</a></li>
+                <li><a href="#2-get-todays-joke">2. Get today's joke</a></li>
+                <li><a href="#3-get-catjson-file">3. Get cat.json file</a></li>
+            </ul>
+        </li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#license">License</a></li>
         </ul>
-        <br>
-        <h3 id="install">Instalation</h3>
-        <p>You can install JokesDB via pip:</p>
-        <pre><code>pip install JokesDB</code></pre>
-        <br>
-        <h3 id="example">Example of Use</h3>
-        <p>Basic usage in Python:</p>
-        <pre><code>
-    from jokesdb import get_jokes, joke_of_the_day
 
-    # Get one random joke
-    print(get_jokes())
+        <h2 id="links">Links</h2>
+        <ul>
+            <li><a href="https://pypi.org/project/jokesdb/">PyPI project page</a></li>
+            <li><a href="https://code2craft.xyz">Website</a></li>
+            <li><a href="https://github.com/gamercristi11/jokesdb">Source code</a></li>
+        </ul>
 
-    # Get 5 jokes from a specific category
-    print(get_jokes(number=5, category="fun"))
+        <h2 id="installation">Installation</h2>
+        <pre><code>pip install jokesdb</code></pre>
 
-    # Get the joke of the day
-    print(joke_of_the_day())
-        </code></pre>
-        <br>
-        <h3 id="sourcecode">Source Code</h3>
-        <p>Find the source code on <a href="https://github.com/gamercristi11/JokesDB">GitHub</a>.</p>
-        <br>
+        <h2 id="usage">Usage</h2>
+
+        <h3 id="1-get-jokes-randomly">1. Get jokes randomly</h3>
+        <pre><code>from jokesdb import get_jokes
+
+        joke = get_jokes()
+        print(joke)</code></pre>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li>number: Number of random jokes to get. (Default = 1)</li>
+            <li>category: Category to get jokes from. (Default = "all"). Available categories: <a href="https://code2craft.xyz/jokesdb/cat.json">cat.json</a> or via <code>catfile()</code></li>
+        </ul>
+
+        <h3 id="2-get-todays-joke">2. Get today's joke</h3>
+        <pre><code>from jokesdb import joke_of_the_day
+
+        todays_joke = joke_of_the_day()
+        print(todays_joke)</code></pre>
+
+        <h3 id="3-get-catjson-file">3. Get cat.json file</h3>
+        <pre><code>from jokesdb import catfile
+
+        categories = catfile()
+        print(categories)</code></pre>
+
+        <h2 id="requirements">Requirements</h2>
+        <ul>
+            <li>Python 3.6+</li>
+            <li>requests library</li>
+        </ul>
+
+        <h2 id="license">License</h2>
+        <p>MIT License</p>
         <footer>
             <hr>
             <p>&copy; 2025 Code2Craft.xyz</p>
