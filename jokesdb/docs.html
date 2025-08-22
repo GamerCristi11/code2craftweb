@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JokeDB</title>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+        <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        </style>
+    </head>
+    <body>
+        <hr>
+            <nav class="navbar">
+                <ul>
+                    <tr>
+                        <td><a href="/">Home</a></td>
+                        <td><a href="/posts.html">Posts</a></td>
+                        <td><a href="/contact.html">Contact</a></td>
+                        <td><a href="https://code2craft.atabook.org">Sign my GuestBook</a></td>
+                    </tr>
+                </ul>
+            </nav>
+        <hr>
+        <br>
+        <h2>JokesDB-Docs</h2>
+        <br>
+        <p>To see related post about JokesDB, <a href="/posts/jokesdb.html">click here</a></p>
+        <br>
+        <h3>Sections:</h3>
+        <ul>
+            <li><a href="#install">How to install JokesDB</a></li>
+            <li><a href="#example">Example of use</a></li>
+            <li><a href="#sourcecode">Source code</a></li>
+        </ul>
+        <br>
+        <h3 id="install">Instalation</h3>
+        <p>You can install JokesDB via pip:</p>
+        <pre><code>pip install JokesDB</code></pre>
+        <br>
+        <h3 id="example">Example of Use</h3>
+        <p>Basic usage in Python:</p>
+        <pre><code>
+    from jokesdb import get_jokes, joke_of_the_day
+
+    # Get one random joke
+    print(get_jokes())
+
+    # Get 5 jokes from a specific category
+    print(get_jokes(number=5, category="fun"))
+
+    # Get the joke of the day
+    print(joke_of_the_day())
+        </code></pre>
+        <br>
+        <h3 id="sourcecode">Source Code</h3>
+        <p>Find the source code on <a href="https://github.com/gamercristi11/JokesDB">GitHub</a>.</p>
+        <br>
+        <footer>
+            <hr>
+            <p>&copy; 2025 Code2Craft.xyz</p>
+        </footer>
+    </body>
+</html>
