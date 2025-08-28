@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Code2Craft-Home</title>
-        <link rel="stylesheet" href="/styles/style.css">
-        <link rel="icon" type="image/png" href="/assets/favicon.png">
-    </head>
-    <body>
-        <hr>
-            <nav class="navbar">
-                <ul>
-                    <tr>
-                        <td><a href="/">Home</a></td>
-                        <td><a href="/posts.html">Posts</a></td>
-                        <td><a href="/contact.html">Contact</a></td>
-                        <td><a href="https://code2craft.atabook.org">Sign my GuestBook</a></td>
-                    </tr>
-                </ul>
-            </nav>
-        <hr>
-        <br>
-        <h1>This website is: <img src="https://file.garden/aF7o8nseM1lpQxpV/0222-construction.gif"></h1>
-        <hr>
-        <div id="sticky-note">
-            <h4>Leatest post:</h4>
-            <p>JokesDB-A python project!About and Docs to use it!</p>
-            <p><a href="/posts/jokesdb.html" id="post-check">See the Post</a></p>
-            <p><a href="/jokesdb/docs.html" id="post-check">See the Docs</a></p>
-            <caption>Date: 21(22) August 2025</caption>
-        </div>
-        <hr>
-        <br>
-        <p>Hi, I'm Code2Craft, a begginer coder that posts random stuff online!</p>
-        <br>
-        <div style="display: flex; align-items: flex-start; margin-bottom: 0; padding: 0; gap: 180px;">
-            <div>
-                
-                <ul style="margin: 5px 0 0 20px; padding: 0;">
-                    <h4>Things I like to post online</h4>
-                    <li>My ESP32</li>
-                    <li>My Arduino Uno</li>
-                    <li>My Raspberry Pi 4</li>
-                    <li>Random stuff and projects</li>
-                    <br>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code2Craft</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navbar container -->
+    <nav id="navbar"></nav>
 
-                </ul>
-            </div>
-            <div>
-                <img src="/assets/piespuno.jpg" alt="Board devices" style="width: 200px; height: auto; display: block; margin: 0;">
-            </div>
-        </div>
-        <h4>Links to my socials:</h4>
-        <li><a href="https://youtube.com/@code2craft">My YouTube Channel(@Code2Craft)</a></li>
-        <li><a href="https://tiktok.com/@Code2Craft">TikTok(@Code2Craft)</a></li>
-        <li><a href="https://github.com/GamerCristi11">Github(@GamerCristi11)</a></li>
-        <p>PS: I used an old username "GamerCristi11" which I rarely use anymore so you will maybe find me as that too but my main focus is on "Code2Craft"</p>
+    <!-- Hero section -->
+    <div class="hero">
+        <img src="/assets/logo.png" alt="Code2Craft Logo" class="logo">
+        <h1>@Code2Craft</h1>
+    </div>
+
+    <!-- Content section -->
+    <div class="content">
+        <h2 class="ctxt" id="aboutme">About me</h2>
         <br>
-        <h4>What coding languages I love learning:</h4>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Python</li>
+        <p>Hi, I'm Code2Craft! I'm a beginner coder who loves learning Python, HTML, and CSS. I post online on <a href="https://youtube.com/@code2craft" target="_blank">YouTube</a> and <a href="https://tiktok.com/@Code2Craft" target="_blank">TikTok</a>.</p>
+        <p>I own an ESP32, Raspberry Pi 4, Arduino Uno R3</p>
         <br>
-        <img src="/assets/pixel-art-13602_256.gif" id="vending-gif" alt="GIF">
-        <footer>
-            <hr>
-            <p>&copy; 2025 Code2Craft.xyz</p>
-        </footer>
-    </body>
+        <h2 class="ctxt" id="projects">Projects</h2>
+        <br>
+        <ul>
+            <li><a href="https://github.com/gamercristi11">My GitHub</a></li>
+            <li><a href="https://scratch.mit.edu/users/gamercristi11/">Scratch Projects</a></li>
+            <li><a href="/jokesdb/docs.html">JokesDB-Docs</a></li>
+        </ul>
+        <br>
+        <h2 id="#findme" class="ctxt">Find me</h2>
+        <br>
+        <ul>
+            <li><a href="https://youtube.com/@YourChannel">YouTube</a></li>
+            <li><a href="https://tiktok.com/@YourTikTok">TikTok</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2025 Code2Craft.xyz
+    </footer>
+
+    <script src="scripts/navbar.js"></script>
+</body>
 </html>
