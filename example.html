@@ -3,31 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Code2Craft-Example</title>
+        <title>Example</title>
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="icon" type="image/png" href="/assets/favicon.png">
     </head>
     <body>
+
+        <!-- Navbar (populated by JS) -->
+        <nav id="navbar"></nav>
+
         <hr>
-            <nav class="navbar">
-                <ul>
-                    <tr>
-                        <td><a href="/">Home</a></td>
-                        <td><a href="/posts.html">Posts</a></td>
-                        <td><a href="/contact.html">Contact</a></td>
-                        <td><a href="https://code2craft.atabook.org">Sign my GuestBook</a></td>
-                    </tr>
-                </ul>
-            </nav>
-        <hr>
-        <br>
-        <h2>This page is used in examples and templates on my website<h2>
-        <a href="/index.html">Go to home page!</a>
-        <br>
-        <img src="https://http.dog/404.jpg" width="300">
+
+        <div class="content">
+            <h2>This page is used in examples and templates on my website</h2>
+            <p><a href="/">Go to home page!</a></p>
+            <img src="https://http.dog/404.jpg" width="300" alt="Example Image">
+        </div>
+
+        <!-- Footer -->
         <footer>
-            <hr>
-            <p>&copy; 2025 Code2Craft.xyz</p>
+            &copy; 2025 Code2Craft.xyz
         </footer>
+
+        <!-- JS for navbar + theme -->
+        <script src="/scripts/navbar.js"></script>
     </body>
 </html>
