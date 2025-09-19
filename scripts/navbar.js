@@ -1,4 +1,9 @@
 const navbarLinks = [
+    { name: ' ', url: '#' },
+    { name: ' ', url: '#' },
+    { name: ' ', url: '#' },
+    { name: ' ', url: '#' },
+    { name: ' ', url: '#' },
     { name: 'Home', url: '/' },
     { name: 'Posts', url: '/posts.html' },
     { name: 'Contact', url: '/contact.html' },

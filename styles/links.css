@@ -1,0 +1,20 @@
+.Link1 {
+    color: rgb(171, 171, 171);
+    text-decoration: none;       /* no underline by default */
+    cursor: pointer;             /* shows hand cursor */
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.Link1:hover {
+    color: #363636;              /* changes color on hover */
+    text-decoration: underline;  /* adds underline on hover */
+}
+
+body.light .Link1 {
+    color: rgb(91, 91, 91);
+}
+
+body.light .Link1:hover {
+    color: #363636;              /* hover color same in light mode */
+    text-decoration: underline;
+}

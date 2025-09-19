@@ -1,30 +1,4 @@
-const navbarLinks = [
-    { name: 'Home', url: '/' },
-    { name: 'Posts', url: '/posts.html' },
-    { name: 'Contact', url: '/contact.html' },
-    { name: 'GuestBook', url: 'https://code2craft.atabook.org' }
-];
 
-const navbar = document.getElementById('navbar');
-
-// Container for links
-const linksContainer = document.createElement('div');
-linksContainer.style.display = 'flex';
-linksContainer.style.gap = '30px';
-linksContainer.style.justifyContent = 'center';
-linksContainer.style.flex = '1'; // take full width so links stay centered
-
-// Add navbar links
-navbarLinks.forEach(link => {
-    const a = document.createElement('a');
-    a.href = link.url;
-    a.textContent = link.name;
-    a.style.textDecoration = 'none';
-    a.style.color = 'inherit';
-    linksContainer.appendChild(a);
-});
-
-navbar.appendChild(linksContainer);
 
 // Add theme switch button (right side)
 const themeButton = document.createElement('button');

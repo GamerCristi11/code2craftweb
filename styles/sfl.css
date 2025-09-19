@@ -1,0 +1,35 @@
+.fa-brands.fa-youtube {
+    color: #FF0000; /* YouTube red */
+}
+.fa-brands.fa-tiktok {
+    color: #ffffff; /* TikTok black */
+}
+
+.fa-solid.fa-envelope {
+    color: #afb3b5; /* Email blue */
+}
+
+.fa-brands.fa-github {
+    color: #ffffff; /* GitHub white */
+}
+
+.fa-brands.fa-discord {
+    color: #ffffff; /* Discord white */
+}
+/* Light mode overrides */
+
+body.light .fa-brands.fa-tiktok {
+    color: #000000; /* TikTok black */
+}
+
+body.light .fa-solid.fa-envelope {
+    color: #383838; /* Email blue */
+}
+
+body.light .fa-brands.fa-github {
+    color: #000000; /* GitHub black */
+}
+
+body.light .fa-brands.fa-discord {
+    color: #5865F2; /* Discord blue */
+}
