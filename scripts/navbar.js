@@ -1,12 +1,7 @@
 const navbarLinks = [
-    { name: ' ', url: '#' },
-    { name: ' ', url: '#' },
-    { name: ' ', url: '#' },
-    { name: ' ', url: '#' },
-    { name: ' ', url: '#' },
     { name: 'Home', url: '/' },
-    { name: 'Posts', url: '/posts.html' },
-    { name: 'Contact', url: '/contact.html' },
+    { name: 'Posts', url: '/posts' },
+    { name: 'Contact', url: '/contact' },
     //{ name: 'GuestBook', url: 'https://code2craft.atabook.org' }
 ];
 
