@@ -10,15 +10,7 @@ p,h1,h2,h3,h4,h5,h6 {
 }  
 
 /*Other things*/
-a {
-    color: white;
-    text-decoration: none;
-}
 
-a:hover {
-    color: rgb(170, 170, 170);
-    text-decoration: underline;
-}
 .nav {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -42,21 +34,47 @@ a:hover {
 
 }
 
-.box a {
-  text-decoration: none;
-  margin: 10px
-}
-
-.box a:hover {
-    color: rgb(170, 170, 170);
-    text-decoration: underline;
-}
-
 .box ul {
     list-style-type: none;
     padding: 0;
 }
 
+.box1 {
+  outline: 2px dashed rgb(255, 255, 255); /* red dashed outline around the div */
+  padding: 10px;
+  width: 500px;
+  height: fit-content;
+  margin-top: 20px;
+}
+.box a{
+    margin-right: 15px;
+}
+a {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    color: rgb(170, 170, 170);
+    text-decoration: underline;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(40, 44, 52);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.box2 {
+  outline: 2px dashed rgb(255, 255, 255); /* red dashed outline around the div */
+  padding: 10px;
+  width: 400px;
+  height: fit-content;
+  margin-top: 20px;
+}
 /* Footer */
 
 footer {

@@ -1,2 +1,2 @@
 # code2craftweb
-## The source code for the website code2craft.xyz
+## The source code for the website https://code2craft.xyz
