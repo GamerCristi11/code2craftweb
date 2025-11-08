@@ -40,7 +40,30 @@
    /_\ | |__  ___ _  _| |_   _ __  ___ 
   / _ \| '_ \/ _ \ || |  _| | '  \/ -_)
  /_/ \_\_.__/\___/\_,_|\__| |_|_|_\___|
-</pre>
+</pre>      
+            <div class="online">
+              <div class="discord">
+                <p id="status-details">loading...</p>
+                <div id="status-blob"></div>
+                <script>
+                    /*Credit for script from: https://rice.place/*/
+                    async function discordChecker() {
+    try {
+      const response = await fetch('https://api.lanyard.rest/v1/users/920617892444258305');
+      const splingus = await response.json();
+      document.getElementById("status-details").innerHTML = `
+      I'm <strong>${splingus.data.discord_status}</strong> (acording to my discord status)
+      `
+    } catch (error) {
+      console.error("failed to fetch!!", error);
+    }
+};
+
+discordChecker();
+setInterval(discordChecker, 5000);
+                </script>
+              </div>
+            </div>
             <p>Hi, I'm Code2Craft(Cristi/Cris) and this is my website(I think it's V5, I lost track...).</p>
             <p>I like to code and mess with tech. I also love Python, JavaScript , HTML and CSS(even<br>tho I'm a beginner at them)</p>
             <p>To contact me, send an email at: <a href="mailto:itsme@code2craft.xyz">itsme@code2craft.xyz</a></p>
@@ -80,6 +103,7 @@
 </pre>
             <br>
             <li><p>Credits to:<a href="https://html-only.neocities.org">https://html-only.neocities.org</a> for the inspiration</p></li>
+            <li><p>Credits to: <a href="https://rice.place">https://rice.place</a> for the status javascript code</p></li>
             <hr>
             <footer>
                 <p>© 2025 Code2Craft.xyz</p>
