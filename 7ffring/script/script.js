@@ -4,6 +4,8 @@
 	// sites in the ring
 	let sites = [
 		"https://code2craft.xyz",
+		"https://g.code2craft.xyz",
+		"https://mustarddayart.nekoweb.org/ps:"
 	];
 	// widget html
 	// PREV and NEXT are replaced with neighbors' urls
