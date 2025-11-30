@@ -1,0 +1,34 @@
+pre,p,h1,h2,h3,h4,h5,h6 {
+     color: white;
+ }
+ 
+
+ body {
+  background-image: url('/media/gifs/stars.gif');
+}
+
+a {
+    color:lightblue
+}
+
+pre a {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+p a {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+dialog {
+  width: 55%;
+  max-width: 70%;
+  background-color: black;
+  border-color: white;
+  border-style: dashed;
+}
+
+li {
+    color: white;
+}
