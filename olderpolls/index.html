@@ -33,10 +33,14 @@
 </form>
             </ul>
             <br>
-            <hr>>
+            <hr>
             <footer>
-                <p>© 2025 Code2Craft.xyz</p>
+                <p id="footer">© year Code2Craft.xyz</p>
             </footer>
+            <script>
+              const currentYear = new Date().getFullYear();
+              document.getElementById('footer').textContent = `© ${currentYear} Code2Craft.xyz`;
+            </script>
         </dialog>
     </body>
 </html>
