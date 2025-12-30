@@ -25,7 +25,11 @@
     <a href="/">Go Back Home</a>
 <pre>====================================</pre>
             <footer>
-                <p>© 2025 Code2Craft.xyz</p>
+                <p id="footer" class="footer">© year Code2Craft.xyz</p>
             </footer>
+            <script>
+              const currentYear = new Date().getFullYear();
+              document.getElementById('footer').textContent = `© ${currentYear} Code2Craft.xyz`;
+            </script>
     </body>
 </html>

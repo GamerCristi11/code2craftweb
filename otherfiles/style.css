@@ -32,3 +32,32 @@ dialog {
 li {
     color: white;
 }
+
+.bigthing {
+  display: flex;
+  gap: 13px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 14px auto;
+}
+
+.side {
+  flex: 1.25;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  border-style: dashed;
+  border-color: #ffffff;
+}
+.mainthing {
+  flex: 2.75;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 8px;
+  border-style: dashed;
+  border-color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+}

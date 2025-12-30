@@ -29,25 +29,87 @@
 }
 
 .todo ul {
-  max-height: 75px;
+  max-height: 90px;
+  overflow-y: auto; 
+  padding-right: 5px; 
+}
+.todo {
+  background-color: #343333;
+}
+
+.log {
+  background-color: #343333;
+}
+
+.log ul {
+    max-height: 70px;
   overflow-y: auto; 
   padding-right: 5px; 
 }
 
+.log li {
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.pages a {
+    margin-right: 8px;
+}
       </style>
-<dialog open>
+<div class="bigthing">
+<div class="mainthing">
                 <img src="/media/buttons/idk/www3.gif" alt="www3 button">
                 <img src="/media/buttons/idk/vscbutton.gif" alt="vsc button">
                 <img src="/media/buttons/idk/bestvieweddesktop.gif" alt="best viewed on desktop">
                 <img src="/media/buttons/idk/best_viewed_with_both_eyes.gif" alt="best viewed with both eyes">
                 <img src="/media/buttons/idk/got_html.gif" alt="got html">
-                <img src="/media/buttons/oth/ubuntu_button_88x31.png" alt="Ubuntu Button">
+                <!--<img src="/media/buttons/oth/ubuntu_button_88x31.png" alt="Ubuntu Button">-->
                 <a href="https://notbyai.fyi/" target="_blank"><img src="/media/img/Createdbyhuman.png" alt="Created by Human" width="88" height="31"></a>
 <br>
-<marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="right" class="buttonsm">
+<hr>   
+<h2>Pages</h2>
+<div class="pages">
+  <a href="/webrings/">Webrings</a>
+  <a href="/guestbook/">Guestbook</a>
+  <a href="/cat/">Draw a Cat</a>
+  <a href="/blog/">Blog</a>
+</div>
+<hr>
+<h2>About Me</h2>
+            <img src="/media/gifs/catblinkie.gif" alt="cat blinkie" width="150" height="20">
+            <!--<img src="/media/gifs/blinkie-poweredbyubuntu.gif" alt="powered by ubuntu blinkie" width="150" height="20">-->
+            <p>Hi, Im Cris(aka Code2Craft) and this is my corner on the <strong>BIG</strong> World Wide Web. I like learning and coding in HTML and CSS, rarely coding in Python and Javascript. Also, I'm Romanian <img src="/media/gifs/roflag.gif" aria-label="romanian flag" height="13px" height="auto"></p>
+            <p>To contact me, send an email at: <a href="mailto:itsme@code2craft.xyz">itsme[at]code2craft.xyz</a></p>
+                        <div class="online">
+              <div class="discord">
+                <p id="status-details">loading...</p>
+                <div id="status-blob"></div>
+                <script src="/otherfiles/discord.js"></script>
+              </div>
+            </div>
+            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="/otherfiles/status.js" defer></script>
+<hr>   
+<h2>Poll</h2>
+<!-- Pollcode.com poll embed -->
+<form method="post" action="https://poll.pollcode.com/42116282"><div style="background-color:#EEEEEE;padding:2px;width:157px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>Who is cuter?</strong></div><input type="radio" name="answer" value="1" id="answer421162821" style="float:left;" /><label for="answer421162821" style="float:left;width:132px;">Cats</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer421162822" style="float:left;" /><label for="answer421162822" style="float:left;width:132px;">Dogs</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+<p>See older polls <a href="/olderpolls/">here</a></p>
+
+<!-- End Pollcode.com poll embed -->
+
+<hr>   
+            <footer>
+                <p id="footer" class="footer">© year Code2Craft.xyz</p>
+            </footer>
+            <script>
+              const currentYear = new Date().getFullYear();
+              document.getElementById('footer').textContent = `© ${currentYear} Code2Craft.xyz`;
+            </script>
+          </div>
+          <div class="side">
+            <marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="right" class="buttonsm">
             <a href='https://frizzbees.dev/' target="_blank"><img src='https://i.frizzbees.dev/lF4Cr7AY7xVk.png' alt="frizzbees.dev"></a>
             <a href="https://max.nekoweb.org/" target="_blank"><img src="https://max.nekoweb.org/images/button.png" alt="max's apartment"></a>
-            <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button11.gif" alt="nekoweb"></a><!-- button by milkyway.moe -->
+            <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button11.gif" alt="nekoweb"></a>
             <a href="https://riri.my/" target="_blank"><img src="/media/buttons/oth/butt.gif" alt="rina"></a>
             <a href="https://hellot.nekoweb.org/" target="_blank"><img src="https://hellot.nekoweb.org/assets/button.png" alt="HelloT Button" width="88" height="31" style="image-rendering: pixelated;" ></a>
             <a href="https://supr.nekoweb.org/" target="_blank"><img class="small-button" src="https://supr.nekoweb.org/assets/button.png" alt="Supr Button" width="88" height="31" style="image-rendering: pixelated;"></a> 
@@ -82,11 +144,7 @@
             <a href="https://mars.nekoweb.org/?button" target="_blank"><img src="https://mars.nekoweb.org/assets/buttons/button0.gif" alt="mars' site" width="88" height="31"></a>
             <a href="https://ghostk.id/?ref=button" target="_blank"><img src="https://ghostk.id/i/88x31.gif" width="88" height="31" alt="https://ghostk.id button"></a>
             <a href="https://seirdy.one/"><img width="88" height="31" src="https://seirdy.one/sticker_88x31.png" alt="Square icon of a colon and semicolon, next to the word “Seirdy”."/></a>
-            <a href="csarhere.nekoweb.org" target="_blank"><img src="https://file.garden/Z5Z-kQ95ETioG568/csarhereNEWEST25button.png" alt"csarhere button"></a>
-
-
-          </marquee>
-<marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="left" class="buttonsm">
+            <a href="csarhere.nekoweb.org" target="_blank"><img src="https://file.garden/Z5Z-kQ95ETioG568/csarhereNEWEST25button.png" alt="csarhere button"></a>
             <a href="https://meowzone.nekoweb.org" target="_blank"><img src="https://meowzone.nekoweb.org/images/gif-pb/88x31.gif" alt="meowzone nekoweb"></a>
             <a href="https://terakun.nekoweb.org/" target="_blank"><img src="https://terakun.nekoweb.org/img/buttons/ricex31.gif" alt="terajun nekoweb"></a>
             <a href="https://nomaakip.xyz" target="_blank"><img src="https://nomaakip.xyz/img/buttons/button2.png" alt="button" title="nomaakip dot xyz"></a>
@@ -125,41 +183,17 @@
             <a href="https://azarma.neokoweb.org/" target="_blank"><img src="/media/buttons/oth/azarmabtt.png" alt="azarma.neocities.org"></a>
             <a href="https://peachmoon.moe"><img src="https://peachmoon.moe/img/peachmoon.gif" loading="lazy"></a>
 </marquee>
-<hr>   
-<h2>Pages</h2>
-<p>
-<a href="/webrings/">Webrings</a>
-<a href="/stuffimade/">Stuff I Made</a> 
-<a href="/guestbook/">Guestbook</a>
-<a href="/logs">Update Logs</a>
-<a href="/cat/">Draw a Cat</a>
-<hr>
-<h2>About Me</h2>
-            <img src="/media/gifs/catblinkie.gif" alt="cat blinkie" width="150" height="20">
-            <img src="/media/gifs/blinkie-poweredbyubuntu.gif" alt="powered by ubuntu blinkie" width="150" height="20">
-            <p>Hi, Im Cris(aka Code2Craft) and this is my corner on the <strong>BIG</strong> World Wide Web. I like learning and coding in HTML and CSS, rarely coding in Python and Javascript. Also, I'm Romanian <img src="/media/gifs/roflag.gif" aria-label="romanian flag" height="13px" height="auto"></p>
-            <p>To contact me, send an email at: <a href="mailto:itsme@code2craft.xyz">itsme[at]code2craft.xyz</a></p>
-                        <div class="online">
-              <div class="discord">
-                <p id="status-details">loading...</p>
-                <div id="status-blob"></div>
-                <script src="/otherfiles/discord.js"></script>
-              </div>
-            </div>
-            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="/otherfiles/status.js" defer></script>
-<hr>   
-<h2>Links</h2>
-            <a href="https://github.com/gamercristi11">GitHub</a>
-            <a href="https://spacehey.com/code2craft">SpaceHey</a>
-            <a href="https://glomble.com/profiles/gzenGR5geMl1">Glomble</a>
-<hr>
-<!-- Pollcode.com poll embed -->
-<form method="post" action="https://poll.pollcode.com/42116282"><div style="background-color:#EEEEEE;padding:2px;width:157px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>Who is cuter?</strong></div><input type="radio" name="answer" value="1" id="answer421162821" style="float:left;" /><label for="answer421162821" style="float:left;width:132px;">Cats</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer421162822" style="float:left;" /><label for="answer421162822" style="float:left;width:132px;">Dogs</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
-<p>See older polls <a href="/olderpolls/">here</a></p>
-
-<!-- End Pollcode.com poll embed -->
-<hr>
-          <div class="todo">
+                    <hr>
+                    <div class="log">
+            <h1>Update Logs</h1>
+            <ul>
+            <li><strong>30.12.2025</strong>-Added Sidebar on Main Page And Minor Changes</li>
+            <li><strong>29.12.2025</strong>-Added Update Logs, Draw a Cat, Guestbook, Blog And a Few 88x31 Buttons Removed a Webring</li>
+            <li>-----<strong>Update logs started(29 Dec 2025)</strong>-----</li>
+            </ul>
+                    </div>
+                    <hr>
+                    <div class="todo">
               <h3>To Do List:</h3>
               <ul></li>
                 <li>Add more stuff to my website</li>
@@ -168,8 +202,8 @@
                 <li>Update my blog</li>
                 <li>Join more webrings</li>
               </ul>
-          </div>
-<hr>   
+              </div>
+              <hr> 
 <h2>My Buttons</h2>
             <a href="https://code2craft.xyz"><img src="/media/buttons/b1.png" alt="Code2Craft dot xyz"></a>
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b1.png" alt="Code2Craft dot xyz"></a></textarea>
@@ -179,14 +213,8 @@
             <br>
             <a href="https://code2craft.xyz"><img src="/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a>
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a></textarea>
-<hr>   
-            <footer>
-                <p id="footer">© year Code2Craft.xyz</p>
-            </footer>
-            <script>
-              const currentYear = new Date().getFullYear();
-              document.getElementById('footer').textContent = `© ${currentYear} Code2Craft.xyz`;
-            </script>
-          </dialog>
+            
+          </div>
+          </div>
     </body>
 </html>
