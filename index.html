@@ -41,12 +41,19 @@
   background-color: #343333;
 }
 
+.todo h3 {
+  text-align: center;
+}
+
 .log ul {
     max-height: 70px;
   overflow-y: auto; 
   padding-right: 5px; 
 }
 
+.log h3 {
+  text-align: center;
+}
 .log li {
   margin-bottom: 5px;
   font-size: small;
@@ -55,7 +62,29 @@
 .pages a {
     margin-right: 8px;
 }
+
+.announcement {
+    background-color: #3b3b3b;
+    color: white;
+    text-align: center;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 8px;
+    padding: auto;
+}
+
+.last-commit {
+  background-color: #343333;
+  padding: 6px;
+  margin-top: 30px;
+}
       </style>
+<div class="announcement">
+<!--  <marquee scrollamount="5" loop="infinite">
+    <h3>🎉Happy New Year 2026! 🎉</h3>
+  </marquee> -->
+<h3>🎉Happy New Year 2026! 🎉</h3>
+</div>
 <div class="bigthing">
 <div class="mainthing">
                 <img src="/media/buttons/idk/www3.gif" alt="www3 button">
@@ -185,8 +214,9 @@
 </marquee>
                     <hr>
                     <div class="log">
-            <h1>Update Logs</h1>
+            <h3>Update Logs</h3>
             <ul>
+            <li><strong>1.1.2026</strong>-Added Announcement on Main Page, Last Commit Date</li>
             <li><strong>30.12.2025</strong>-Added Sidebar on Main Page And Minor Changes</li>
             <li><strong>29.12.2025</strong>-Added Update Logs, Draw a Cat, Guestbook, Blog And a Few 88x31 Buttons Removed a Webring</li>
             <li>-----<strong>Update logs started(29 Dec 2025)</strong>-----</li>
@@ -204,7 +234,7 @@
               </ul>
               </div>
               <hr> 
-<h2>My Buttons</h2>
+<h3 style="text-align: center;">My Buttons</h3>
             <a href="https://code2craft.xyz"><img src="/media/buttons/b1.png" alt="Code2Craft dot xyz"></a>
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b1.png" alt="Code2Craft dot xyz"></a></textarea>
             <br>
@@ -213,7 +243,11 @@
             <br>
             <a href="https://code2craft.xyz"><img src="/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a>
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a></textarea>
-            
+            <br>
+            <br>
+            <div class="last-commit">
+            <p id="last-commit"> Loading...</p><script src="/otherfiles/last-commit.js" defer></script>
+            </div>
           </div>
           </div>
     </body>
