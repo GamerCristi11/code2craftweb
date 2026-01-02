@@ -83,7 +83,20 @@
 <!--  <marquee scrollamount="5" loop="infinite">
     <h3>🎉Happy New Year 2026! 🎉</h3>
   </marquee> -->
-<h3>🎉Happy New Year 2026! 🎉</h3>
+<h3 id="at">...</h3>
+<script>
+      try {
+     fetch('https://api.code2craft.xyz/ra')
+          .then(res => res.json())
+          .then(data => {
+          document.getElementById('at').textContent = data.announcement;
+          });
+        }
+        catch (error) {
+            console.error("Failed to catch announcement", error);
+        }
+
+</script>
 </div>
 <div class="bigthing">
 <div class="mainthing">
@@ -216,6 +229,7 @@
                     <div class="log">
             <h3>Update Logs</h3>
             <ul>
+            <li><strong>2.1.2026</strong>-Added Random Announcements</li>
             <li><strong>1.1.2026</strong>-Added Announcement on Main Page, Last Commit Date</li>
             <li><strong>30.12.2025</strong>-Added Sidebar on Main Page And Minor Changes</li>
             <li><strong>29.12.2025</strong>-Added Update Logs, Draw a Cat, Guestbook, Blog And a Few 88x31 Buttons Removed a Webring</li>
@@ -246,7 +260,23 @@
             <br>
             <br>
             <div class="last-commit">
-            <p id="last-commit"> Loading...</p><script src="/otherfiles/last-commit.js" defer></script>
+            <p id="last-commit"> Loading...</p>
+            <script>
+
+    try {
+     fetch('https://api.code2craft.xyz/lc')
+          .then(res => res.json())
+          .then(data => {
+                const dateupd = data.date.slice(0, 10);
+document.getElementById('last-commit').textContent = `Last commit: ${dateupd}`;
+          });
+        }
+        catch (error) {
+            console.error("failed to fetch last commit!!", error);
+        }
+
+
+            </script>
             </div>
           </div>
           </div>
