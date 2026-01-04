@@ -4,8 +4,7 @@ async function discordChecker() {
       const response = await fetch('https://api.lanyard.rest/v1/users/920617892444258305');
       const splingus = await response.json();
       document.getElementById("status-details").innerHTML = `
-      I'm <strong>${splingus.data.discord_status}</strong>  <button type="button" onmouseover="document.getElementById('status').innerHTML = 'According my Discord status'" onmouseout="document.getElementById('status').innerHTML = ''">(?)</button><p id="status"></p>
-      `
+      I'm <strong>${splingus.data.discord_status}</strong>`
     } catch (error) {
       console.error("failed to fetch!!", error);
     }

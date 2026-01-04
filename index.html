@@ -11,7 +11,7 @@
     </head>
     <body>
       <style>
-        #statuscafe {
+/*        #statuscafe {
     padding: .5em;
     background-color: black;
     border-style: dotted;
@@ -27,7 +27,7 @@
     margin: 0 1em 0.5em 1em;
     color: white;
 }
-
+*/
 .todo ul {
   max-height: 90px;
   overflow-y: auto; 
@@ -83,20 +83,7 @@
 <!--  <marquee scrollamount="5" loop="infinite">
     <h3>🎉Happy New Year 2026! 🎉</h3>
   </marquee> -->
-<h3 id="at">...</h3>
-<script>
-      try {
-     fetch('https://api.code2craft.xyz/ra')
-          .then(res => res.json())
-          .then(data => {
-          document.getElementById('at').textContent = data.announcement;
-          });
-        }
-        catch (error) {
-            console.error("Failed to catch announcement", error);
-        }
-
-</script>
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="/otherfiles/status.js" defer></script>
 </div>
 <div class="bigthing">
 <div class="mainthing">
@@ -124,12 +111,11 @@
             <p>To contact me, send an email at: <a href="mailto:itsme@code2craft.xyz">itsme[at]code2craft.xyz</a></p>
                         <div class="online">
               <div class="discord">
+                <p>According to my Discord status</p>
                 <p id="status-details">loading...</p>
-                <div id="status-blob"></div>
                 <script src="/otherfiles/discord.js"></script>
               </div>
             </div>
-            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="/otherfiles/status.js" defer></script>
 <hr>   
 <h2>Poll</h2>
 <!-- Pollcode.com poll embed -->
@@ -229,6 +215,7 @@
                     <div class="log">
             <h3>Update Logs</h3>
             <ul>
+            <li></li>
             <li><strong>2.1.2026</strong>-Added Random Announcements</li>
             <li><strong>1.1.2026</strong>-Added Announcement on Main Page, Last Commit Date</li>
             <li><strong>30.12.2025</strong>-Added Sidebar on Main Page And Minor Changes</li>
@@ -259,25 +246,6 @@
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a></textarea>
             <br>
             <br>
-            <div class="last-commit">
-            <p id="last-commit"> Loading...</p>
-            <script>
-
-    try {
-     fetch('https://api.code2craft.xyz/lc')
-          .then(res => res.json())
-          .then(data => {
-                const dateupd = data.date.slice(0, 10);
-document.getElementById('last-commit').textContent = `Last commit: ${dateupd}`;
-          });
-        }
-        catch (error) {
-            console.error("failed to fetch last commit!!", error);
-        }
-
-
-            </script>
-            </div>
           </div>
           </div>
     </body>
