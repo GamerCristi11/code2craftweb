@@ -8,16 +8,14 @@
         <meta name="robots" content="noai, noimageai">
         <link href="/media/img/icon.png" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="/otherfiles/style.css">
+        <script src="/otherfiles/1.js" defer></script>
     </head>
     <body>
       <style>
-/*        #statuscafe {
-    padding: .5em;
-    background-color: black;
-    border-style: dotted;
-    border-color: white;
-    width: fit-content;
-    max-width: 350px;
+      #statuscafe {
+      background-color: #343333;
+      padding: 6px;
+      margin-top: 30px;
 }
 #statuscafe-username {
     margin-bottom: .5em;
@@ -27,12 +25,13 @@
     margin: 0 1em 0.5em 1em;
     color: white;
 }
-*/
+
 .todo ul {
   max-height: 90px;
   overflow-y: auto; 
   padding-right: 5px; 
 }
+
 .todo {
   background-color: #343333;
 }
@@ -63,7 +62,15 @@
     margin-right: 8px;
 }
 
-.announcement {
+.buttons {
+  background-color: #343333;
+}
+
+.buttons h3 {
+  text-align: center;
+}
+
+/*.announcement {
     background-color: #3b3b3b;
     color: white;
     text-align: center;
@@ -71,20 +78,11 @@
     border-color: white;
     border-radius: 8px;
     padding: auto;
-}
-
-.last-commit {
-  background-color: #343333;
-  padding: 6px;
-  margin-top: 30px;
-}
+} */
       </style>
-<div class="announcement">
-<!--  <marquee scrollamount="5" loop="infinite">
-    <h3>🎉Happy New Year 2026! 🎉</h3>
-  </marquee> -->
-<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="/otherfiles/status.js" defer></script>
-</div>
+<!--<div class="announcement">
+    <h3>Welcome to my website! :3</h3>
+</div>-->
 <div class="bigthing">
 <div class="mainthing">
                 <img src="/media/buttons/idk/www3.gif" alt="www3 button">
@@ -100,7 +98,6 @@
 <div class="pages">
   <a href="/webrings/">Webrings</a>
   <a href="/guestbook/">Guestbook</a>
-  <a href="/cat/">Draw a Cat</a>
   <a href="/blog/">Blog</a>
 </div>
 <hr>
@@ -145,8 +142,6 @@
             <a href="https://y2k.neocities.org" target="_blank"><img src="https://y2k.neocities.org/buttons/000%20Y2K%20NEOCITIES%20BUTTON%2001.png" width="88" height="31" style="image-rendering: pixelated;" alt="y2k neocities"></a> 
             <a href="https://dimden.dev/" target="_blank"><img src="https://dimden.dev/images/88x31.gif" alt="dimden dev"></a>
             <a href="https://meows.zip" target="_blank"><img src="https://meows.zip/meowszip.png" alt="meow zip"></a>
-            <iframe src="//incr.easrng.net/badge?key=code2craft" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
-            <a href="https://easrng.net/" target="_blank"><img src="//badges.easrng.net/easrng.gif" alt="a neon cursive 'easrng' floating in space" title="easrng" width="88" height="31"></a>
             <a href="https://jbc.lol" target="_blank"><img src="https://jbc.lol/imgs/buttons/jbtn.svg" alt="jb's site" style="image-rendering: pixelated;"/></a>
             <a href="https://adamngshrine.com/" target="_blank"><img src="https://media.adamngshrine.com/images/button.png" alt="button88x31"></a>
             <a href="https://lexp.dev/" target="_blank"><img src="/media/buttons/oth/lexpdevimg.png" alt="lexp.dev website"></a>
@@ -185,7 +180,6 @@
             <a href="https://test.31a05b.net/ipvx.html" target="_blank"><img width=88 height=31 src="https://test.31a05b.net/ipvx-quiet.gif" alt="test 31a05b net"></a>
             <a href="https://abbie.moe" target="_blank"><img src="/media/buttons/oth/abbiemoe.png" alt="abbie.moe"></a>
             <a href="https://duck.fyi" target="_blank"><img src="https://duck.fyi/buttons/88x31.gif" alt="duck.fyi"></a>
-            <a href="https://9b39.neocities.org/" target="_blank"><img src="https://9b39.neocities.org/static/88x31/9b39.png" alt="9b39 neocities"></a>
             <a href="https://olliveen.neocities.org/" target="_blank"><img src="https://olliveen.neocities.org/img/button2.jpg" alt="olliveen neocities"></a>
             <a href="https://leizy8499.neocities.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg" alt="leizy8499 neocities"></a>
             <a href="https://lostlove.neocities.org/" target="_blank"><img src="https://lostlove.neocities.org/images/button.gif" alt="lostlove neocities"></a>
@@ -212,9 +206,12 @@
             <a href="https://peachmoon.moe"><img src="https://peachmoon.moe/img/peachmoon.gif" loading="lazy"></a>
 </marquee>
                     <hr>
+                    <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="/otherfiles/status.js" defer></script>
+                    <hr>
                     <div class="log">
             <h3>Update Logs</h3>
             <ul>
+            <li><strong>5.1.2026</strong>-Added Console Message, Status Cafe to Sidebar Removed Announcement Banner, Draw A Cat(Inactive) and Some Buttons, Changed The Style a Bit</li>
             <li><strong>4.1.2025</strong>-Removed Last Commit, Random Banned, Added Status Cafe Status To Announcement Banner</li>
             <li><strong>2.1.2026</strong>-Added Random Announcements</li>
             <li><strong>1.1.2026</strong>-Added Announcement on Main Page, Last Commit Date</li>
@@ -234,8 +231,9 @@
                 <li>Join more webrings</li>
               </ul>
               </div>
-              <hr> 
-<h3 style="text-align: center;">My Buttons</h3>
+            <hr>
+            <div class="buttons">
+            <h3>My Buttons</h3>
             <a href="https://code2craft.xyz"><img src="/media/buttons/b1.png" alt="Code2Craft dot xyz"></a>
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b1.png" alt="Code2Craft dot xyz"></a></textarea>
             <br>
@@ -244,8 +242,7 @@
             <br>
             <a href="https://code2craft.xyz"><img src="/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a>
             <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b3.gif" alt="Code2Craft dot xyz"></a></textarea>
-            <br>
-            <br>
+            </div>
           </div>
           </div>
     </body>

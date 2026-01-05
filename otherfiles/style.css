@@ -8,17 +8,12 @@ pre,p,h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-    color:lightblue
+  color:lightblue;
+  text-decoration: none;
 }
 
-pre a {
-    color: lightblue;
-    text-decoration: underline;
-}
-
-p a {
-    color: lightblue;
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 dialog {

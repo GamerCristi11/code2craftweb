@@ -6,6 +6,6 @@ fetch("https://status.cafe/users/code2craft/status.json")
       document.getElementById("statuscafe-content").innerHTML = "No status yet."
       return
     }
-   // document.getElementById("statuscafe-username").innerHTML =   'Posted <a href="https://status.cafe/users/code2craft" target="_blank">here</a>: '  + r.timeAgo
-    document.getElementById("statuscafe-content").innerHTML =  `<h3>${r.content}</h3>`
+    document.getElementById("statuscafe-username").innerHTML =   `<p class="sc-up">My Status: <a href="https://status.cafe/users/code2craft" target="_blank" class="sc-link">${r.face} ${r.timeAgo}</a></p>`
+    document.getElementById("statuscafe-content").innerHTML =  `<p class="sc-content">${r.content}</p>`
   })
