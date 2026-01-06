@@ -12,10 +12,10 @@
     </head>
     <body>
       <style>
-      #statuscafe {
-      background-color: #343333;
-      padding: 6px;
-      margin-top: 30px;
+#statuscafe {
+    background-color: #343333;
+    padding: 6px;
+    margin-top: 30px;
 }
 #statuscafe-username {
     margin-bottom: .5em;
@@ -24,6 +24,11 @@
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
     color: white;
+}
+
+.sc-content{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }
 
 .todo ul {
@@ -40,22 +45,10 @@
   background-color: #343333;
 }
 
-.todo h3 {
-  text-align: center;
-}
-
 .log ul {
-    max-height: 70px;
+  max-height: 100px;
   overflow-y: auto; 
   padding-right: 5px; 
-}
-
-.log h3 {
-  text-align: center;
-}
-.log li {
-  margin-bottom: 5px;
-  font-size: small;
 }
 
 .pages a {
@@ -66,8 +59,15 @@
   background-color: #343333;
 }
 
-.buttons h3 {
-  text-align: center;
+.log, .todo, .side, .buttons {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: white;
+}
+
+.log h3, .todo h3, .buttons h3 {
+    font-size: 20px;
+    text-align: center;
 }
 
 /*.announcement {
@@ -211,6 +211,7 @@
                     <div class="log">
             <h3>Update Logs</h3>
             <ul>
+            <li><stong>6.1.2026</stong>-Changed the Font Style</li>
             <li><strong>5.1.2026</strong>-Added Console Message, Status Cafe to Sidebar Removed Announcement Banner, Draw A Cat(Inactive) and Some Buttons, Changed The Style a Bit</li>
             <li><strong>4.1.2025</strong>-Removed Last Commit, Random Banned, Added Status Cafe Status To Announcement Banner</li>
             <li><strong>2.1.2026</strong>-Added Random Announcements</li>

@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+h1,h2,h3,h4,h5,h6 { 
+    font-family: "Assistant", sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', system-ui;
+    font-size: 15px;
+}
+
+a {
+    font-family: 'Open Sans', system-ui;
+    font-weight: bold;
+}
+
 pre,p,h1,h2,h3,h4,h5,h6 {
-     color: white;
+    color: white;
  }
- 
+
+ pre {
+    font-family: 'Courier New', monospace;
+    color: white;
+}
 
  body {
   background-image: url('/media/gifs/stars.gif');
