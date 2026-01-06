@@ -13,8 +13,8 @@ p {
 
 a {
     font-family: 'Open Sans', system-ui;
-    font-weight: bold;
-}
+    font-weight: 700;
+ }
 
 pre,p,h1,h2,h3,h4,h5,h6 {
     color: white;
